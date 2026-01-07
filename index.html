@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo | Контент-системы</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23001a80%22/><text x=%2250%22 y=%2260%22 font-family=%22Arial%22 font-size=%2250%22 fill=%22white%22 text-anchor=%22middle%22 font-weight=%22bold%22>TS</text></svg>">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+</head>
+<body>
+
+    <div id="ambient-container">
+        <canvas id="ambient-canvas"></canvas>
+    </div>
+
+    <!-- Курсор удален -->
+
+    <div id="preloader" class="preloader">
+        <div class="loader-content">
+            <span class="loader-percent">0%</span>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="brand">
+                <div class="brand-avatar">
+                    <img src="ava.jpg" alt="Tempo">
+                </div>
+                <span id="brand-name">Tempo Systems</span>
+            </a>
+
+            <nav class="nav-glass">
+                <a href="#what-you-get" class="nav-btn"><span class="btn-text">Что вы получаете</span></a>
+                <a href="#projects" class="nav-btn"><span class="btn-text">Портфолио</span></a>
+                <a href="#clients" class="nav-btn"><span class="btn-text">Наши клиенты</span></a>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <a href="https://t.me/krauve" class="cta-btn primary header-cta-sm" target="_blank">
+                    <span class="btn-text">Telegram</span>
+                </a>
+                <button id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+       
+        <section id="hero" class="hero section-pad">
+            <div class="container hero-container">
+                
+                <div class="hero-top reveal delay-1">
+                    <h1>
+    Выстраиваем контент&#8209;системы и<br>
+    доводим до ваших целей
+</h1>
+                </div>
+
+                <div class="hero-layout">
+                    <div class="hero-left reveal delay-2">
+                        <p class="hero-main-desc">
+                            Мы полностью забираем на себя управление контентом для вашего&nbsp;бизнеса.
+                            Вы больше не думаете о сценариях, монтажёрах, правках и о том, что&nbsp;снимать&nbsp;дальше.
+                        </p>
+
+                        <div class="btn-wrapper">
+                            <a href="https://t.me/krauve" target="_blank" class="cta-btn primary">
+                                <span class="btn-text">Написать</span>
+                            </a>
+                            <a href="#what-you-get" class="cta-btn secondary">
+                                <span class="btn-text">Что вы получаете</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="what-you-get" class="section-pad">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="reveal">
+                        <h2 style="margin-bottom: 40px; white-space: nowrap;">ЧТО ИМЕННО МЫ БЕРЕМ НА СЕБЯ:</h2>
+                        <ul class="custom-list">
+                            <li>Забираем у владельца необходимость думать, что снимать и зачем</li>
+                            <li>Сами генерируем идеи и сценарии под конкретный бизнес и текущие цели</li>
+                            <li>Ищем, отбираем и управляем монтажёрами</li>
+                            <li>Улучшаем качество видео и убираем одни и те же повторяющиеся ошибки</li>
+                            <li>Обеспечиваем регулярный и стабильный выход видео без срывов и потери качества</li>
+                            <li>Избавляем клиента от ощущения, что контент - это вечная головная боль</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reveal delay-1" style="margin-top: 80px;">
+                        <div class="glow-box">
+                            <h3>Контент на любом канале - это игра в вероятности.</h3>
+                            <p>Мы не ждём, пока случайное видео выстрелит. Мы создаём кратчайший путь от текущего состояния до рабочей контент-модели, проверяя идеи через системное тестирование и отбор форматов.</p>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="reveal delay-2 scroll-hint-wrapper">
+                    <span class="scroll-text">Листайте вниз</span>
+                    <div class="mouse-icon">
+                        <div class="wheel"></div>
+                    </div>
+                    <span class="scroll-text">чтобы увидеть проекты</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-pad">
+            <div class="container">
+                <h2 class="reveal">Избранные кейсы</h2>
+                
+                <div class="projects-grid reveal delay-1">
+                    
+                    <div class="project-card">
+                        <div class="proj-img" style="background-image: url('preview3.jpg');"></div>
+                        <video class="proj-video" loop muted playsinline></video>
+                        <div class="proj-info">
+                            <h3>Рилс для Соломина</h3>
+                            <span>Набрал 600к просмотров</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="proj-img" style="background-image: url('preview2.jpg');"></div>
+                        <video class="proj-video" loop muted playsinline></video>
+                        <div class="proj-info">
+                            <h3>Рилс для artkelo</h3>
+                            <span>Набрал 100к просмотров после долгого застоя</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="proj-img" style="background-image: url('preview6.jpg');"></div>
+                        <video class="proj-video" loop muted playsinline></video>
+                        <div class="proj-info">
+                            <h3>Рилс для davinci</h3>
+                            <span>Экспертный рилс для стоматологии davicni</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card hidden-project">
+                        <div class="proj-img" style="background-image: url('preview4.jpg');"></div>
+                        <video class="proj-video" loop muted playsinline></video>
+                        <div class="proj-info">
+                            <h3>Рилс для davinci</h3>
+                            <span>Стоматология</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card hidden-project">
+                        <div class="proj-img" style="background-image: url('preview5.jpg');"></div>
+                        <video class="proj-video" loop muted playsinline></video>
+                        <div class="proj-info">
+                            <h3>AIX Promo</h3>
+                            <span>Продающая видеореклама сервиса AIX</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card hidden-project">
+                        <div class="proj-img" style="background-image: url('preview1.jpg');"></div>
+                        <video class="proj-video" loop muted playsinline></video>
+                        <div class="proj-info">
+                            <h3>3D Motion</h3>
+                            <span>3d-МОУШЕН РИЛС ДЛЯ ARTKELO</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="show-more-wrapper">
+                    <button id="show-more-btn" class="show-more-btn">
+                        <span class="btn-text">Показать еще</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients" class="section-pad">
+            <div class="container">
+                <h2 class="reveal">НАШИ КЛИЕНТЫ</h2>
+                
+                <div class="clients-grid reveal delay-1">
+                    <div class="card client-box">
+                        <div class="client-img"><img src="" alt=""></div>
+                        <div class="client-info">
+                            <h4 id="cl-1-name">artkelo</h4>
+                            <p id="cl-1-desc" style="margin-bottom:0; font-size: 0.95rem;">Производство премиальных домов и бань, 220к подписчиков в Instagram</p>
+                        </div>
+                    </div>
+                    <div class="card client-box">
+                        <div class="client-img"><img src="" alt=""></div>
+                        <div class="client-info">
+                            <h4 id="cl-2-name">davinci</h4>
+                            <p id="cl-2-desc" style="margin-bottom:0; font-size: 0.95rem;">Стоматология, которая лечит 90% российского шоу-бизнеса</p>
+                        </div>
+                    </div>
+                    <div class="card client-box">
+                        <div class="client-img"><img src="" alt=""></div>
+                        <div class="client-info">
+                            <h4 id="cl-3-name">Глеб Соломин</h4>
+                            <p id="cl-3-desc" style="margin-bottom:0; font-size: 0.95rem;">Топ-подкастер, 1млн подписчиков на YouTube</p>
+                        </div>
+                    </div>
+                    <div class="card client-box">
+                        <div class="client-img"><img src="" alt=""></div>
+                        <div class="client-info">
+                            <h4 id="cl-4-name">Лев Яловега</h4>
+                            <p id="cl-4-desc" style="margin-bottom:0; font-size: 0.95rem;">Авитолог, владелец AIX — сервиса для автоматизации Авито</p>
+                        </div>
+                    </div>
+                    <div class="card client-box">
+                        <div class="client-img"><img src="" alt=""></div>
+                        <div class="client-info">
+                            <h4 id="cl-5-name">Flame Sharks</h4>
+                            <p id="cl-5-desc" style="margin-bottom:0; font-size: 0.95rem;">Киберспортивная команда по CS2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="section-pad">
+            <div class="container">
+                <div class="glow-box reveal" style="padding: 80px 60px; width: 100%; max-width: 900px;">
+                    <div class="why-us-wrapper">
+                        <h2 style="margin-bottom: 40px;">ПОЧЕМУ ИМЕННО TEMPO?</h2>
+                        <div class="why-content">
+                            <p class="why-text" style="margin-bottom: 40px;">Мы не обещаем заявки или рост продаж просто ради красивых слов.</p>
+                            
+                            <p class="why-text">
+                                Мы выстраиваем управляемую систему и методом тестов находим рабочие форматы именно под вас.<br>
+                                Это отличает нас от 90% исполнителей и агентств, обещающих результат без понимания, как его достичь.
+                            </p>
+                        </div>
+                        <div class="btn-wrapper" style="justify-content: flex-start; margin-top: 50px;">
+                            <a href="https://t.me/krauve" target="_blank" class="cta-btn primary">
+                                <span class="btn-text">Обсудить проект</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <span class="copyright">© 2025 Tempo Systems. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="clients.js"></script>
+    <script src="video-player.js"></script>
+    <script src="main.js"></script>
+    <script src="background.js"></script>
+</body>
+</html>
